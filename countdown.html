@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <p id="disp">
+            <input type="button" id="button" value="Countdown" onclick="cntdwn()" />
+        </p>
+        <p id="num2">10</p>
+        <script>
+            let disp = document.getElementById("num2");
+            var i = 10;
+            function cntdwn(){
+                setInterval(function cnt(){
+                    if(i>0){
+                        i-=1;
+                        disp.innerHTML = i;
+                }else(disp.innerHTML = "BLAST OFF!!")},1000)
+                }
+        </script>
+    </body>
+</html>
